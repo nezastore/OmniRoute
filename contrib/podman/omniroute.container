@@ -14,8 +14,8 @@ Image=localhost/omniroute:base
 ContainerName=omniroute
 
 Network=omniroute.network
-PublishPort=20128:20128
 PublishPort=20129:20129
+PublishPort=20130:20130
 
 Volume=omniroute.volume:/app/data:Z
 
@@ -23,9 +23,9 @@ Volume=omniroute.volume:/app/data:Z
 # Volume=/home/USER/code/docker/OmniRoute/data:/app/data:Z
 
 Environment=DATA_DIR=/app/data
-Environment=PORT=20128
-Environment=DASHBOARD_PORT=20128
-Environment=API_PORT=20129
+Environment=PORT=20129
+Environment=DASHBOARD_PORT=20129
+Environment=API_PORT=20130
 Environment=API_HOST=0.0.0.0
 Environment=REDIS_URL=redis://redis:6379
 Environment=JWT_SECRET=change-me-to-a-random-base64-string
